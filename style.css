@@ -2,35 +2,75 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: background-color 1s linear;
+}
+.ex-1-square:hover {
+    background-color: red;
 }
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: width 1000ms ease-in;
+}
+.ex-2-square:active{
+    width: 100%;
 }
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: border-radius 250ms;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
 }
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: opacity 1500ms ease-out;
+}
+.ex-4-square:hover{
+    opacity: 0;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: all 0.5s;
+}
+.ex-5-square:hover{
+    transform: scale(1.66);
+}
+.ex-5-square:active{
+    transform: scale(0.33);
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: filter 1.5s, border-radius 0.5s, box-shadow 1.5s, transform 2s linear;
 }
-
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+.ex-7-img:hover{
+    filter: brightness(2) blur(2.4px) saturate(1.3);
+}
+.ex-8-img:hover{
+    border-radius: 50px;
+    filter: sepia(0.5) blur(1px);
+    box-shadow: lightslategray 5px 5px 15px;
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter 1.5s, border-radius 0.5s, transform 2s linear;
+}
+.ex-9-img:hover{
+    transform: scale(1.5);
+    filter: sepia(0.3) saturate(1.2);
+    border-radius: 15px;
 }
 .ex-10-icon {
     font-size: 60px;
