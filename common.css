@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.well{
+    overflow: hidden;
+}
 .margin-top-15 {
     margin-top: 15px;
 }
